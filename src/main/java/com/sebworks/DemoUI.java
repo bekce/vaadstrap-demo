@@ -27,8 +27,8 @@ public class DemoUI extends UI {
 
 		Row row = container.addNewRow();
 		Col col1 = row.addNewCol(ColMod.SM_6, ColMod.MD_4);
-		col1.setChildrenStyle(MarginMod.TOP7, true);
 		Col col2 = row.addNewCol(ColMod.SM_6, ColMod.MD_4, VisibilityMod.HIDDEN_XS);
+		col1.setChildrenStyle(MarginMod.TOP7);
 		col1.addComponent(new TextArea());
 		col1.addComponent(new TextArea());
 		col2.addComponent(new Text().append("This ").appendBold("column").append(" will be hidden in ").appendSmall("XS").append(" screens"));
